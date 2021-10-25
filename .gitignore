@@ -2,7 +2,7 @@
 node_modules/
 /deploy.sh
 /vue.config.js
-/src/components/HelloWorld.vue
+src/components//HelloWorld.vue
 
 
 # local env files
