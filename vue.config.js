@@ -1,5 +1,9 @@
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production'
+//       ? '/dynamic_address/'
+//       : '/'
+// }
+
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-      ? '/dynamic_address/'
-      : '/'
+  publicPath: '/dynamic_address/'
 }

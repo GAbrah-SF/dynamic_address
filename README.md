@@ -1,4 +1,4 @@
-# dynamic-address
+# Dynamic Address in Vue.js 3
 
 ## Project setup
 ```

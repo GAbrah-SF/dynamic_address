@@ -1,14 +1,21 @@
-#app_vue {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
+#app {
+	/*font-family: Avenir, Helvetica, Arial, sans-serif;*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
+	/*text-align: center;*/
+	color: #FFF;
 	/*margin-top: 60px;*/
 }
 
 #img_gaa {
 	display: block;
 	margin: 10px auto 0;
-	width: 30%;
+	width: 35%;
+}
+
+
+html, body{
+	background-image: url("../assets/fondo_app.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
 }
