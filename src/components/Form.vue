@@ -85,7 +85,7 @@
       <br>
       <div class="d-grid gap-2 d-md-flex justify-content-md-center">
         <button type="button" class="btn btn-outline-info" @click="showAlert">INSTRUCTIONS</button>
-        <button type="button" class="btn btn-outline-danger" @click="limpiar">CLEAN FORM</button>
+        <button type="button" class="btn btn-outline-danger" @click="clean">CLEAN FORM</button>
       </div>
       <br>
       <Address :via1="via1" :street="street" :via2="via2" :corner="corner"

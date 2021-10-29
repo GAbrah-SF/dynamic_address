@@ -1,7 +1,7 @@
 import {capitalize} from "./function/capitalize.mjs";
 import {showAlert2} from "./function/alert2";
 
-export default {
+let address = {
   name: "Address",
   address: "",
   props: {
@@ -22,9 +22,9 @@ export default {
   methods: {
     capitalize,
     showAlert2,
-    validate_address () {
+    validate_address() {
       this.address = document.getElementById("address").innerText
-      if (!this.address){
+      if (!this.address) {
         this.showAlert2();
       } else {
         document.getElementById("address_form").value = this.address
@@ -35,3 +35,5 @@ export default {
     },
   },
 }
+
+export default address

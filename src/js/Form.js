@@ -3,8 +3,8 @@ import {capitalize} from "./function/capitalize.mjs";
 import {onlyNumbers} from "./function/numbers";
 import {showAlert} from "./function/alert";
 
-let separador = '-'.repeat(15);
-export default {
+let separator = '-'.repeat(15);
+let form = {
   components: {
     Address,
   },
@@ -25,7 +25,7 @@ export default {
       cod_post: "",
 
       vias: [
-        {value: '', text: separador},
+        {value: '', text: separator},
         {value: 'arr.', text: 'arroyo'},
         {value: 'av.', text: 'avenida'},
         {value: 'bo.', text: 'barrio'},
@@ -66,7 +66,7 @@ export default {
       ],
 
       estados: [
-        {value: '', text: separador},
+        {value: '', text: separator},
         {value: 'Ags', text: 'Aguascalientes'},
         {value: 'B.C', text: 'Baja California'},
         {value: 'B.C.S', text: 'Baja California Sur'},
@@ -105,7 +105,7 @@ export default {
     capitalize,
     onlyNumbers,
     showAlert,
-    limpiar() {
+    clean() {
       this.via1 = ""
       this.street = ""
       this.via2 = ""
@@ -122,3 +122,5 @@ export default {
     },
   },
 }
+
+export default form
