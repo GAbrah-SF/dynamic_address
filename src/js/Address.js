@@ -1,5 +1,9 @@
 import {capitalize} from "./function/capitalize.mjs";
 import {showAlert2} from "./function/alert2";
+import {showAlert3} from "./function/alert3";
+import {validate_address} from "@/js/function/address_validate";
+import {delete_address} from "@/js/function/address_delete";
+import {copy_address} from "@/js/function/address_copy";
 
 let address = {
   name: "Address",
@@ -22,17 +26,10 @@ let address = {
   methods: {
     capitalize,
     showAlert2,
-    validate_address() {
-      this.address = document.getElementById("address").innerText
-      if (!this.address) {
-        this.showAlert2();
-      } else {
-        document.getElementById("address_form").value = this.address
-      }
-    },
-    delete_address() {
-      document.getElementById("address_form").value = ""
-    },
+    showAlert3,
+    validate_address,
+    delete_address,
+    copy_address,
   },
 }
 
