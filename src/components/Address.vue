@@ -30,10 +30,11 @@
     <span v-if="edo!==''">{{ edo }}; </span>
     <span v-if="cod_post!==''">C.P. {{ cod_post }}.</span>
   </h4>
-  <br><br><br><br>
+  <br>
   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <button type="button" class="btn btn-outline-success" @click="validate_address">VALIDATE ADDRESS</button>
-    <button type="button" class="btn btn-outline-danger" @click="delete_address">DELETE ADDRESS</button>
+    <button type="button" title="Validar Domicilio" class="btn btn-outline-success" @click="validate_address">VALIDATE ADDRESS</button>
+    <button type="button" title="Copiar Domicilio" class="btn btn-outline-info" @click="copy_address('address_form')">COPY ADDRESS</button>
+    <button type="button" title="Borrar Domicilio" class="btn btn-outline-danger" @click="delete_address">DELETE ADDRESS</button>
   </div>
   <input type="text" class="form-control text-center fst-italic" id="address_form" readonly
          placeholder="VALID ADDRESS FOR A DATABASE">
